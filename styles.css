@@ -364,6 +364,7 @@ footer .wordmark {
 
 svg {
   background-color: var(--gray);
+  margin-bottom: -1px;
 }
 
 .footer-info {
