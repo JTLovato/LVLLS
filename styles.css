@@ -11,16 +11,21 @@
 
 @font-face {
   font-family: "Elegant Classica";
-  src: url("fonts/Agreloy.ttf");
+  src: url("fonts/Elegante\ Classica.ttf");
 }
 
 @font-face {
   font-family: "Andale Mono";
-  src: url("fonts/Logistra.ttf");
+  src: url("fonts/ANDALEMO.TTF");
 }
 
 body {
   margin: 0;
+  font-family: "Andale Mono", "Times New Roman", Times, serif;
+}
+
+.font {
+  font-family: "Elegant Classica", "Times New Roman", Times, serif;
 }
 
 .bg {
