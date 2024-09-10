@@ -27,6 +27,7 @@
     emailjs.sendForm('contact_services', 'contact_form', this)
                     .then(() => {
                         console.log('SUCCESS!');
+						document.getElementById('contact-form').innerHTML="<span style='text-align:center'>Sent! Thank You!<br>If you'd like to send another message, please refresh the page!</span>"
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
@@ -100,7 +101,7 @@
               placeholder="Your Message..."
             ></textarea>
             <p class="text-sent">You Will Recieve Confirmation Sent To Your Email Soon</p>
-            <input class="contact-send font" type="submit" value="Send" />
+            <input id="submit" class="contact-send font" type="submit" value="Send" />
           </div>
         </form>
       </div>
