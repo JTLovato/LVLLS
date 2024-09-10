@@ -35,6 +35,10 @@ body {
   z-index: 1;
 }
 
+.header {
+  background-color: none;
+}
+
 .headers {
   margin: 0;
   width: 100%;
@@ -43,24 +47,33 @@ body {
   text-align: center;
 }
 
+.sized {
+  max-width: 2000px;
+}
+
 main {
   position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 html {
   font-family: "ariel";
   background-color: var(--gray);
   color: var(--red);
+  scroll-padding-top: 10%;
 }
 
 nav {
   width: 100%;
-  background-color: #ffffffb7;
+  background-color: #ffffffdd;
   border-bottom: solid 1px #9e4040;
   display: flex;
   justify-content: space-between;
   align-content: center;
   z-index: 2;
+  position: fixed;
 }
 
 .main_logo {
@@ -74,12 +87,15 @@ nav {
 
 .nav_right {
   padding: 5px 10px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .nav_right a {
   color: var(--red);
   text-decoration: none;
-  margin: 15px 5px 0;
+  margin: 0px 5px 0;
   border-bottom: solid 5px #9e404000;
 }
 
@@ -97,7 +113,7 @@ nav {
 /* Hero */
 
 .hero-holder {
-  padding: 5% 5% 0;
+  padding: 15% 5% 0;
 }
 
 .hero_info {
@@ -191,6 +207,10 @@ input.contact-send {
   text-decoration: none;
   margin: 0;
 }
+.text-sent {
+  width: 100%;
+  text-align: center;
+}
 
 .contact-detail p {
   font-size: 150%;
@@ -278,7 +298,7 @@ article {
 }
 
 .accordion:after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  content: "\25BD";
   font-size: 13px;
   color: var(--white);
   float: right;
@@ -287,7 +307,7 @@ article {
 
 .active:after {
   color: var(--white);
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\25B3";
 }
 
 .panel p {
@@ -383,4 +403,60 @@ svg {
 }
 
 @media only screen and (min-width: 992px) {
+  .nav_right {
+    padding: 15px 10px 15px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+
+  .hero-holder {
+    padding: 11% 15% 7% 5%;
+  }
+
+  .hero_info {
+    padding: 0 5% 20px;
+    width: 50%;
+    height: 80%;
+    margin: 0 5%;
+    font-size: 1.65vw;
+  }
+
+  html {
+    scroll-padding-top: 20%;
+  }
+
+  .contact-holder,
+  .about-holder,
+  .services-holder {
+    padding: 0 10%;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+
+  .accordion {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .panel p {
+    font-size: 1.5vw;
+    padding: 15px 0;
+  }
+
+  .panel {
+    padding: 0 25px;
+  }
+
+  footer .wordmark {
+    width: 75%;
+  }
+
+  .footer_left,
+  .footer_right {
+    width: 40%;
+  }
 }

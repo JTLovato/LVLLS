@@ -9,9 +9,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <script type="text/javascript" src="./behavior.js"></script>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -32,32 +30,26 @@
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
-                
-            
             });
         }
     </script>
-   
-   
-
- 
-
   </head>
   <body>
     <main>
+		<header class="headers">
+			<nav id="id">
+			  <a class="main_logo" href="index.html">
+				<img src="./img/wordmark_long.png" />
+			  </a>
+			  <div class="nav_right font">
+				<a href="#contact" class="nav-button">Contact</a>
+				<a href="#about" class="nav-button">About</a>
+				<a href="#services" class="nav-button">Services</a>
+			  </div>
+			</nav>
+		  </header>
+		<div class="sized">
       <div class="bg">
-        <header class="header">
-          <nav>
-            <a class="main_logo" href="index.html">
-              <img src="./img/wordmark_long.png" />
-            </a>
-            <div class="nav_right font">
-              <a href="#contact" class="nav-button">Contact</a>
-              <a href="#about" class="nav-button">About</a>
-              <a href="#services" class="nav-button">Services</a>
-            </div>
-          </nav>
-        </header>
         <div class="hero-holder">
           <div class="hero_info">
             <h1 class="font">Details Matter</h1>
@@ -70,7 +62,6 @@
         </div>
         <div class="spacer"></div>
       </div>
-
       <div id="contact" class="contact-holder">
         <h1 class="headers font">Contact Us</h1>
         <div class="contact-detail">
@@ -108,14 +99,14 @@
               id="message"
               placeholder="Your Message..."
             ></textarea>
-            <p>You Will Recieve Confirmation Sent To Your Email Soon</p>
+            <p class="text-sent">You Will Recieve Confirmation Sent To Your Email Soon</p>
             <input class="contact-send font" type="submit" value="Send" />
           </div>
         </form>
       </div>
       <div class="spacer"></div>
       <div id="about" class="about-holder">
-        <h1 class="headers font">Contact Us</h1>
+        <h1 class="headers font">About Us</h1>
         <p>
           LVL Legal Support Services was started in 2024. After 12 years of working as a paralegal/office
           manager in a small firm dedicated to juvenile and family law, with a smattering of criminal law,
@@ -187,9 +178,8 @@
             <p>As a bookkeeper, Leah is able to help with tracking time, invoices, A/R, A/P, payroll and
               reconciliation.</p>
           </div>
-          
-
       </div>
+	  </div>
       <footer>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" viewBox="0 0 3000 658" enable-background="new 0 0 3000 658" xml:space="preserve">
@@ -3130,7 +3120,5 @@ z"/>
         } 
       });
     }
-
-        
     </script>
 </html>
