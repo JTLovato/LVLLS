@@ -151,7 +151,6 @@ nav {
 
 .contact-container {
   width: 90%;
-  padding: 10px;
   display: flex;
   justify-content: center;
   border-radius: 3px;
@@ -193,8 +192,8 @@ input.contact-send {
 }
 
 .contact-detail {
-  width: 100%;
-  padding: 15px;
+  width: 90%;
+  /* padding: 15px; */
   color: var(--red);
   display: flex;
   justify-content: center;
@@ -216,7 +215,7 @@ input.contact-send {
   font-size: 150%;
 }
 .contact-detail h1 {
-  font-size: 200%;
+  font-size: 150%;
   text-align: center;
 }
 
