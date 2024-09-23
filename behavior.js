@@ -17,5 +17,5 @@ let contactTrouble = document.getElementById("contact_trouble");
 
 console.log(
   "%cHey y'all! If you're reading this, you should probably offer Leah Van Lieu a job, she'd be a big asset for you.",
-  "color: dodgerblue; padding: 100px;"
+  "color: dodgerblue; padding: 50px;"
 );
