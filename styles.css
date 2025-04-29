@@ -49,6 +49,10 @@ body {
   background-color: none;
 }
 
+.rsyte-link {
+  text-decoration: none;
+}
+
 .headers {
   margin: 0;
   width: 100%;
@@ -387,6 +391,7 @@ footer {
   justify-content: center;
   text-align: center;
   margin-top: 40px;
+  width: 100%;
 }
 
 .mountains {
@@ -406,7 +411,7 @@ footer div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 200%;
+  font-size: 140%;
 }
 
 .footer_left a,
@@ -422,13 +427,21 @@ footer .wordmark {
   margin: 15px 0;
 }
 
+.footer_right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .footer_right h3 {
   margin: 20px 0 -10px;
 }
 
 .footer_right h1 {
-  font-size: 500%;
+  font-size: 400%;
   margin: 0;
+  width: 90%;
+  text-align: center;
 }
 
 svg {
